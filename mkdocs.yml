@@ -5,6 +5,7 @@ nav:
   - Getting Started: getting_started.md
   - Addons (v4):
       - addons_v4/battlemod.md
+      - addons_v4/gearswap.md
 theme:
   name: material
   palette:
