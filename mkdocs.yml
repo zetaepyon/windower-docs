@@ -1,3 +1,6 @@
 site_name: Windower Docs Test 2
 theme:
   name: material
+  palette:
+    primary: green
+    accent: green
