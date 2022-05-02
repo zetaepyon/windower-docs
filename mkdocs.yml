@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - Getting Started: getting_started.md
   - Addons (v4):
-      - battlemod.md
+      - addons_v4/battlemod.md
 theme:
   name: material
   palette:
