@@ -3,6 +3,7 @@ site_url: https://docs.windower.net
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Addons (v4): addons/
 theme:
   name: material
   palette:
