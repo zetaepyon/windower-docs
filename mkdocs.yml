@@ -1,6 +1,22 @@
-site_name: Windower Docs Test 2
+site_name: Windower Documentation
 theme:
   name: material
   palette:
     primary: green
     accent: green
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+repo_url: https://github.com/Windower/docs
+copyright: Copyright &copy; 2022 Windower Development Team | All FFXI content and images &copy; 2002-2022 SQUARE ENIX CO., LTD. | FINAL FANTASY is a registered trademark of SQUARE ENIX CO., LTD.
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Windower
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/aUrHCvk
