@@ -1,1 +1,3 @@
 site_name: Windower Docs Test
+theme:
+  name: material
