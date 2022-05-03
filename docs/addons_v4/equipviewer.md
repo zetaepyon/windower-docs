@@ -15,11 +15,14 @@ Displays current equipment grid on screen. Also can show current Ammo count and 
 
 ## Settings
 
-* Most settings can be modified via commands, but you can edit the settings.xml directly for a few uncommon settings.
-
-**Abbreviation:** `//ev`
+Most settings can be modified via commands, but you can edit the `settings.xml` directly for a few uncommon settings.
 
 ## Commands
+
+!!! tip ""
+
+    **Abbreviation:** `ev`
+
 1. `position <xpos> <ypos>`: move display to position (from top left)
 2. `size <pixels>`: set pixel size of each item slot (defaults to 32 -- same as the size of the item icons)
 3. `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
@@ -33,7 +36,7 @@ Displays current equipment grid on screen. Also can show current Ammo count and 
 11. `justify`: toggles between ammo text being right or left justifed (default is right justified)
 12. `help`: displays explanations of each command
 
-#### Legacy Command:
+#### Legacy Command
 
 `game_path <path>`
 :   sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forward slash `/` instead. (Legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere.)
