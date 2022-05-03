@@ -5,11 +5,7 @@ tags:
   - User Interface
 ---
 
-!!! info inline end "Attribution"
-
-    **Author:**  Tako, Rubenator<br>
-    **Version:**  3.3.0<br>
-    **Date:** April 13, 2021<br>
+???+ abstract inline end "Attribution"
 
     | :--- | :--- |
     | **Author(s)** | Tako, Rubenator |
