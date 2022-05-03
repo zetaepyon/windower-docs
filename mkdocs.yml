@@ -5,8 +5,96 @@ nav:
   - Getting Started: getting_started.md
   - Addons (v4): 
       - addons_v4/index.md
-      - addons_v4/battlemod.md
-      - addons_v4/gearswap.md
+      - A - C:
+          - addons_v4/aecho.md
+          - addons_v4/announcetarget.md
+          - addons_v4/answeringmachine.md
+          - addons_v4/autocontrol.md
+          - addons_v4/autoinvite.md
+          - addons_v4/autojoin.md
+          - addons_v4/autora.md
+          - addons_v4/azuresets.md
+          - addons_v4/barfiller.md
+          - addons_v4/battlemod.md
+          - addons_v4/blist.md
+          - addons_v4/blualert.md
+          - addons_v4/bluguide.md
+          - addons_v4/boxdestroyer.md
+          - addons_v4/cancel.md
+          - addons_v4/capetrader.md
+          - addons_v4/cellhelp.md
+          - addons_v4/chars.md
+          - addons_v4/chatlink.md
+          - addons_v4/chatporter.md
+          - addons_v4/clock.md
+          - addons_v4/consolebg.md
+          - addons_v4/craft.md
+      - D - L:
+          - addons_v4/digger.md
+          - addons_v4/distance.md
+          - addons_v4/distanceplus.md
+          - addons_v4/dynamishelper.md
+          - addons_v4/enemybar.md
+          - addons_v4/enternity.md
+          - addons_v4/equipviewer.md
+          - addons_v4/eval.md
+          - addons_v4/fastcs.md
+          - addons_v4/findall.md
+          - addons_v4/gametime.md
+          - addons_v4/gearswap.md
+          - addons_v4/highlight.md
+          - addons_v4/infobar.md
+          - addons_v4/inforeplacer.md
+          - addons_v4/instals.md
+          - addons_v4/itemizer.md
+          - addons_v4/jobchange.md
+          - addons_v4/latentchecker.md
+          - addons_v4/linker.md
+          - addons_v4/logger.md
+      - M - S:
+          - addons_v4/macrochanger.md
+          - addons_v4/mobcompass.md
+          - addons_v4/nostrum.md
+          - addons_v4/obiaway.md
+          - addons_v4/ohshi.md
+          - addons_v4/omen.md
+          - addons_v4/organizer.md
+          - addons_v4/pettp.md
+          - addons_v4/plasmon.md
+          - addons_v4/pluginmanager.md
+          - addons_v4/pointwatch.md
+          - addons_v4/porter.md
+          - addons_v4/pouches.md
+          - addons_v4/rawr.md
+          - addons_v4/reive.md
+          - addons_v4/respond.md
+          - addons_v4/rhombus.md
+          - addons_v4/rolltracker.md
+          - addons_v4/scoreboard.md
+          - addons_v4/send.md
+          - addons_v4/setbgm.md
+          - addons_v4/shortcuts.md
+          - addons_v4/speedchecker.md
+          - addons_v4/spellcheck.md
+          - addons_v4/stna.md
+          - addons_v4/stopwatch.md
+          - addons_v4/subtarget.md
+      - T - Z:
+          - addons_v4/targetinfo.md
+          - addons_v4/temps.md
+          - addons_v4/text.md
+          - addons_v4/thtracker.md
+          - addons_v4/timestamp.md
+          - addons_v4/tparty.md
+          - addons_v4/translate.md
+          - addons_v4/treasurepool.md
+          - addons_v4/treasury.md
+          - addons_v4/update.md
+          - addons_v4/visiblefavor.md
+          - addons_v4/vwhl.md
+          - addons_v4/xivbar.md
+          - addons_v4/yush.md
+          - addons_v4/zonetimer.md
   - Plugins (v4): index.md
   - Addons (v5): index.md
 theme:
