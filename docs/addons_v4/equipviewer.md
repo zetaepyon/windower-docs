@@ -35,11 +35,12 @@ Displays current equipment grid on screen. Also can show current Ammo count and 
 
 #### Legacy Command:
 
-`game_path <path>`: sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forewardslash `/` instead. (legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere)
+`game_path <path>`
+:   sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forward slash `/` instead. (Legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere.)
 	
 ### Example Commands
 
-=== "Console"
+=== "Windower Console"
 
     ```
     ev pos 700 400
@@ -73,7 +74,7 @@ Displays current equipment grid on screen. Also can show current Ammo count and 
     //ev help
     ```
 
-=== "Macro"
+=== "Game Macro"
 
     ```
     /con ev pos 700 400
