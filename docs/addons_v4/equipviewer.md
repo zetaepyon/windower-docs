@@ -7,6 +7,7 @@ tags:
 
 ???+ abstract inline end "Attribution"
 
+    | | |
     | :--- | :--- |
     | **Author(s)** | Tako, Rubenator |
     | **Version** | 3.3.1 |
