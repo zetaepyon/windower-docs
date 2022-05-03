@@ -107,6 +107,9 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
   icon:
     repo: fontawesome/brands/github
 repo_url: https://github.com/Windower/docs
@@ -122,6 +125,8 @@ markdown_extensions:
       alternate_style: true
 plugins:
   - tags
+  - search
+  - git-revision-date
 extra:
   social:
     - icon: fontawesome/brands/github
