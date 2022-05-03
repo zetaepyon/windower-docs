@@ -23,7 +23,10 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 
     **Abbreviation:** `ev`
 
-1. `position <xpos> <ypos>`: move display to position (from top left)
+#### position
+:   `position <xpos> <ypos>`
+    Moves the display to the specified position (from top left).
+    
 2. `size <pixels>`: set pixel size of each item slot (defaults to 32 -- same as the size of the item icons)
 3. `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
 4. `alpha <opacity>`: set opacity of icons (out of 255)
