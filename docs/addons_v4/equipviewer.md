@@ -55,58 +55,58 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 | `justify` || toggles between ammo text being right or left justifed (default is right justified) |
 `help` || displays explanations of each command 
 
-### Example Commands
+!!! tip "Example Commands"
 
-=== "Windower Console"
+    === "Windower Console"
 
-    ```
-    ev pos 700 400
-    ev size 64
-    ev scale 1.5
-    ev alpha 255
-    ev transparency 200
-    ev background 0 0 0 72
-    ev ammocount
-    ev encumbrance
-    ev hideonzone
-    ev hideoncutscene
-    ev justify
-    ev help
-    ```
+        ```
+        ev pos 700 400
+        ev size 64
+        ev scale 1.5
+        ev alpha 255
+        ev transparency 200
+        ev background 0 0 0 72
+        ev ammocount
+        ev encumbrance
+        ev hideonzone
+        ev hideoncutscene
+        ev justify
+        ev help
+        ```
 
-=== "Chat Input"
+    === "Chat Input"
 
-    ```
-    //ev pos 700 400
-    //ev size 64
-    //ev scale 1.5
-    //ev alpha 255
-    //ev transparency 200
-    //ev background 0 0 0 72
-    //ev ammocount
-    //ev encumbrance
-    //ev hideonzone
-    //ev hideoncutscene
-    //ev justify
-    //ev help
-    ```
+        ```
+        //ev pos 700 400
+        //ev size 64
+        //ev scale 1.5
+        //ev alpha 255
+        //ev transparency 200
+        //ev background 0 0 0 72
+        //ev ammocount
+        //ev encumbrance
+        //ev hideonzone
+        //ev hideoncutscene
+        //ev justify
+        //ev help
+        ```
 
-=== "Game Macro"
+    === "Game Macro"
 
-    ```
-    /con ev pos 700 400
-    /con ev size 64
-    /con ev scale 1.5
-    /con ev alpha 255
-    /con ev transparency 200
-    /con ev background 0 0 0 72
-    /con ev ammocount
-    /con ev encumbrance
-    /con ev hideonzone
-    /con ev hideoncutscene
-    /con ev justify
-    /con ev help
-    ```
+        ```
+        /con ev pos 700 400
+        /con ev size 64
+        /con ev scale 1.5
+        /con ev alpha 255
+        /con ev transparency 200
+        /con ev background 0 0 0 72
+        /con ev ammocount
+        /con ev encumbrance
+        /con ev hideonzone
+        /con ev hideoncutscene
+        /con ev justify
+        /con ev help
+        ```
     
 ## Legacy Commands
 
