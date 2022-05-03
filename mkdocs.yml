@@ -3,7 +3,8 @@ site_url: https://docs.windower.net
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Addons (v4): addons_v4/index.md
+  - Addons (v4): 
+      - addons_v4/index.md
       - addons_v4/battlemod.md
       - addons_v4/gearswap.md
   - Plugins (v4):
