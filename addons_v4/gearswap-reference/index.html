@@ -1,0 +1,3763 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.windower.net/addons_v4/gearswap-reference/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+    
+    
+      
+        <title>GearSwap User Script Reference - Windower Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#user-event-functions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Windower Documentation" class="md-header__button md-logo" aria-label="Windower Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Windower Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GearSwap User Script Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Windower/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Windower/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../getting_started/" class="md-tabs__link">
+      Getting Started
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        Addons (v4)
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Plugins (v4)
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Addons (v5)
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Windower Documentation" class="md-nav__button md-logo" aria-label="Windower Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Windower Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Windower/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Windower/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Addons (v4)</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Addons (v4)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Addons (v4)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          A - C
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="A - C" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          A - C
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aecho/" class="md-nav__link">
+        AEcho
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../announcetarget/" class="md-nav__link">
+        AnnounceTarget
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../answeringmachine/" class="md-nav__link">
+        AnsweringMachine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autocontrol/" class="md-nav__link">
+        AutoControl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoinvite/" class="md-nav__link">
+        AutoInvite
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autojoin/" class="md-nav__link">
+        AutoJoin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autora/" class="md-nav__link">
+        AutoRA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azuresets/" class="md-nav__link">
+        AzureSets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../barfiller/" class="md-nav__link">
+        BarFiller
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../battlemod/" class="md-nav__link">
+        BattleMod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blist/" class="md-nav__link">
+        Blist
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blualert/" class="md-nav__link">
+        BLUAlert
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bluguide/" class="md-nav__link">
+        BluGuide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxdestroyer/" class="md-nav__link">
+        BoxDestroyer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cancel/" class="md-nav__link">
+        Cancel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capetrader/" class="md-nav__link">
+        Cape Trader
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cellhelp/" class="md-nav__link">
+        CellHelp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chars/" class="md-nav__link">
+        Chars
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatlink/" class="md-nav__link">
+        ChatLink
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatporter/" class="md-nav__link">
+        ChatPorter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clock/" class="md-nav__link">
+        Clock
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consolebg/" class="md-nav__link">
+        ConsoleBG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../craft/" class="md-nav__link">
+        Craft
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          D - L
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="D - L" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          D - L
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digger/" class="md-nav__link">
+        Digger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distance/" class="md-nav__link">
+        Distance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distanceplus/" class="md-nav__link">
+        DistancePlus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dynamishelper/" class="md-nav__link">
+        DynamisHelper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enemybar/" class="md-nav__link">
+        Enemybar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enternity/" class="md-nav__link">
+        Enternity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../equipviewer/" class="md-nav__link">
+        Equipviewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eval/" class="md-nav__link">
+        Eval
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastcs/" class="md-nav__link">
+        FastCS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../findall/" class="md-nav__link">
+        FindAll
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gametime/" class="md-nav__link">
+        Gametime
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gearswap/" class="md-nav__link">
+        GearSwap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../highlight/" class="md-nav__link">
+        Highlight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infobar/" class="md-nav__link">
+        InfoBar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inforeplacer/" class="md-nav__link">
+        InfoReplacer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instals/" class="md-nav__link">
+        InstaLS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itemizer/" class="md-nav__link">
+        Itemizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jobchange/" class="md-nav__link">
+        JobChange
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../latentchecker/" class="md-nav__link">
+        LatentChecker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linker/" class="md-nav__link">
+        Linker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logger/" class="md-nav__link">
+        Logger
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          M - S
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="M - S" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          M - S
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macrochanger/" class="md-nav__link">
+        MacroChanger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobcompass/" class="md-nav__link">
+        MobCompass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nostrum/" class="md-nav__link">
+        Nostrum
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obiaway/" class="md-nav__link">
+        ObiAway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ohshi/" class="md-nav__link">
+        OhShi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../omen/" class="md-nav__link">
+        Omen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../organizer/" class="md-nav__link">
+        Organizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pettp/" class="md-nav__link">
+        PetTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plasmon/" class="md-nav__link">
+        Plasmon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pluginmanager/" class="md-nav__link">
+        Plugin Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pointwatch/" class="md-nav__link">
+        PointWatch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porter/" class="md-nav__link">
+        Porter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pouches/" class="md-nav__link">
+        Pouches
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rawr/" class="md-nav__link">
+        RAWR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reive/" class="md-nav__link">
+        Reive
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../respond/" class="md-nav__link">
+        Respond
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rhombus/" class="md-nav__link">
+        Rhombus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rolltracker/" class="md-nav__link">
+        RollTracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scoreboard/" class="md-nav__link">
+        Scoreboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../send/" class="md-nav__link">
+        Send
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setbgm/" class="md-nav__link">
+        SetBGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcuts/" class="md-nav__link">
+        Shortcuts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speedchecker/" class="md-nav__link">
+        SpeedChecker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spellcheck/" class="md-nav__link">
+        SpellCheck
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stna/" class="md-nav__link">
+        STNA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stopwatch/" class="md-nav__link">
+        Stopwatch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subtarget/" class="md-nav__link">
+        SubTarget
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          T - Z
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T - Z" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          T - Z
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../targetinfo/" class="md-nav__link">
+        TargetInfo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../temps/" class="md-nav__link">
+        Temps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text/" class="md-nav__link">
+        Text
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thtracker/" class="md-nav__link">
+        THTracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timestamp/" class="md-nav__link">
+        Timestamp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tparty/" class="md-nav__link">
+        TParty
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../translate/" class="md-nav__link">
+        Translate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../treasurepool/" class="md-nav__link">
+        TreasurePool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../treasury/" class="md-nav__link">
+        Treasury
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visiblefavor/" class="md-nav__link">
+        VisibleFavor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vwhl/" class="md-nav__link">
+        VWHL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xivbar/" class="md-nav__link">
+        XIVBar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yush/" class="md-nav__link">
+        Yush
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zonetimer/" class="md-nav__link">
+        ZoneTimer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Plugins (v4)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Addons (v5)
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-event-functions" class="md-nav__link">
+    User Event Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gearswap-functions" class="md-nav__link">
+    GearSwap Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="GearSwap Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set_combine" class="md-nav__link">
+    set_combine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equip" class="md-nav__link">
+    equip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change_target" class="md-nav__link">
+    change_target
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spell" class="md-nav__link">
+    Spell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spell-target" class="md-nav__link">
+    Spell Target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player" class="md-nav__link">
+    Player
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-equipment" class="md-nav__link">
+    Player Equipment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-target" class="md-nav__link">
+    Player Target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-last-subtarget" class="md-nav__link">
+    Player Last Subtarget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-subtarget" class="md-nav__link">
+    Player Subtarget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-buff-details" class="md-nav__link">
+    Player Buff Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pet" class="md-nav__link">
+    Pet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adventuring-fellow" class="md-nav__link">
+    Adventuring Fellow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alliance-and-party" class="md-nav__link">
+    Alliance and Party
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#world" class="md-nav__link">
+    World
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-buffs" class="md-nav__link">
+    Active Buffs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/Windower/docs/edit/master/docs/addons_v4/gearswap-reference.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  
+
+
+
+  <h1>GearSwap User Script Reference</h1>
+
+<h2 id="user-event-functions">User Event Functions</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">get_sets()</td>
+<td align="left">Called once on load. Used to define variables, and specifically "sets"</td>
+</tr>
+<tr>
+<td align="left">pretarget(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs when the command text hits the outgoing text buffer. Does not occur for actions that bypass the outgoing text buffer (like using items from the menu). cancel_spell() and change_target() are implemented in this phase.</td>
+</tr>
+<tr>
+<td align="left">precast(spell,position)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs immediately before the outgoing action packet is injected. cancel_spell(), verify_equip(), force_send(), and cast_delay() are implemented in this phase. Does not occur for items that bypass the outgoing text buffer (like using items from the menu).</td>
+</tr>
+<tr>
+<td align="left">midcast(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs immediately after the outgoing action packet is injected. Does not occur for items that bypass the outgoing text buffer (like using items from the menu).</td>
+</tr>
+<tr>
+<td align="left">aftercast(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs when the "result" action packet is received from the server, or an interruption of some kind is detected.</td>
+</tr>
+<tr>
+<td align="left">status_change(new,old)</td>
+<td align="left">Passes the new and old statuses.</td>
+</tr>
+<tr>
+<td align="left">pet_change(pet,gain)</td>
+<td align="left">Passes in the "pet" table and a boolean indicating whether the pet is being summoned (true) or dismissed (false). Order is not guaranteed relative to aftercast for JAs like Release or Leave.</td>
+</tr>
+<tr>
+<td align="left">pet_midcast(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs when the "readies" action packet is received for your pet.</td>
+</tr>
+<tr>
+<td align="left">pet_aftercast(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs when the "result" action packet is received for your pet.</td>
+</tr>
+<tr>
+<td align="left">pet_status_change(new,old)</td>
+<td align="left">Passes the new and old statuses of your pet.</td>
+</tr>
+<tr>
+<td align="left">filtered_action(spell)</td>
+<td align="left">Passes the resources line for the spell with a few modifications. Occurs when the player attempts to cast a spell that they are unable to cast. Cancel_spell() is implemented in this phase.</td>
+</tr>
+<tr>
+<td align="left">sub_job_change(new,old)</td>
+<td align="left">Passes the three letter abbreviations for your new subjob and your old subjob.</td>
+</tr>
+<tr>
+<td align="left">buff_change(name,gain,buff_details)</td>
+<td align="left">Passes the buff name and a boolean that indicates whether it was gained (true) or lost (false), as well as the  associated player.buff_details table. Does not fire if your buff bar does not change. For instance, overwriting a March with another March will not trigger this event.</td>
+</tr>
+<tr>
+<td align="left">buff_refresh(name,buff_details)</td>
+<td align="left">Passes the buff name and the associated player.buff_details table for the buff. Fires when a status effect is overwritten.</td>
+</tr>
+<tr>
+<td align="left">party_buff_change(member table,name,gain,res.buffs[id])</td>
+<td align="left">Passes the table of the party member who gained or lost the buff, the buff name, a boolean that indicates whether it was gained (true) or lost (false), and the resource table for the buff. Does not fire if your buff bar does not change. For instance, overwriting a March with another March will not trigger this event.</td>
+</tr>
+<tr>
+<td align="left">indi_change(indi_table,gain)</td>
+<td align="left">Passes the indi effect table when an indi aura changes and a boolean that indicates whether it was gained or lost.</td>
+</tr>
+<tr>
+<td align="left">self_command(command)</td>
+<td align="left">Passes any self commands, which are triggered by <code>//gs c &lt;command&gt;</code> (or <code>/console gs c &lt;command&gt;</code> in macros)</td>
+</tr>
+<tr>
+<td align="left">file_unload(file_name)</td>
+<td align="left">Called once on file/addon unload. This is passed the new short job name.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gearswap-functions">GearSwap Functions</h2>
+<h3 id="set_combine">set_combine</h3>
+<div class="highlight"><pre><span></span><code><span class="n">set_combine</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">,</span> <span class="p">...)</span>
+</code></pre></div>
+<p>Combines an arbitrary number of sets and returns the resulting set, giving right-most sets slot priority.</p>
+<h3 id="equip">equip</h3>
+<div class="highlight"><pre><span></span><code><span class="n">equip</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">,</span> <span class="n">set3</span><span class="p">,</span> <span class="p">...)</span>
+</code></pre></div>
+<p>Builds a set to be equipped. Slot priority is given to the last set (collapses the sets from right to left). If two equip commands are used, the latter one has slot priority over the first.</p>
+<h3 id="change_target">change_target</h3>
+<div class="highlight"><pre><span></span><code><span class="n">change_target</span><span class="p">(</span><span class="n">new</span> <span class="n">target</span><span class="p">)</span>
+</code></pre></div>
+<p>Changes the target to whatever value is passed. It can be a name or something like <code>&lt;t&gt;</code>, but be aware that there will be no correction done on it. Valid only in pretarget.</p>
+<h2 id="variables">Variables</h2>
+<h3 id="spell">Spell</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">spell.name</td>
+<td align="left">string</td>
+<td align="left">Spell name in the language of your client</td>
+</tr>
+<tr>
+<td align="left">spell.prefix</td>
+<td align="left">string</td>
+<td align="left">Default prefix for a given spell. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.targets</td>
+<td align="left">table</td>
+<td align="left">Table of Booleans keyed to 'Self', 'Player', 'Party', 'Ally', 'NPC', 'Enemy', and 'Corpse'. True means that it's valid for that target.</td>
+</tr>
+<tr>
+<td align="left">spell.type</td>
+<td align="left">string</td>
+<td align="left">String indicating the type of spell without spaces. So "JobAbility" for Provoke, "WhiteMagic" for Cure, "BardSong" for Marches, etc. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.skill</td>
+<td align="left">string</td>
+<td align="left">String form of the skill a spell is based on, or "Ability" for abilities. So "Healing Magic" for Cure, "Ability" for Provoke, "Singing" for Marches, etc. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.mp_cost</td>
+<td align="left">number</td>
+<td align="left">Number representing the base MP cost of a spell. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.tp_cost</td>
+<td align="left">number</td>
+<td align="left">Number representing the base TP cost of a spell. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.element</td>
+<td align="left">string</td>
+<td align="left">String form of the element name. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.range</td>
+<td align="left">number</td>
+<td align="left">Number representing the spell's maximum range.</td>
+</tr>
+<tr>
+<td align="left">spell.recast</td>
+<td align="left">number</td>
+<td align="left">Number representing the base recast time of the spell. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.recast_id</td>
+<td align="left">number</td>
+<td align="left">Number representing the spell's timer ID, which can be used with the LuaCore get_spell_recasts() function to determine the current spell recast.</td>
+</tr>
+<tr>
+<td align="left">spell.cast_time</td>
+<td align="left">number</td>
+<td align="left">Number representing the base cast time of the spell. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.wsA</td>
+<td align="left">string</td>
+<td align="left">String indicating the primary WS property. Blank string if it doesn't exist. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.wsB</td>
+<td align="left">string</td>
+<td align="left">String indicating the secondary WS property. Blank string if it doesn't exist. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.wsC</td>
+<td align="left">string</td>
+<td align="left">String indicating the tertiary WS property. Blank string if it doesn't exist. Obtained from resources.</td>
+</tr>
+<tr>
+<td align="left">spell.interrupted</td>
+<td align="left">boolean</td>
+<td align="left">True if the spell (or job ability) failed to execute. Only valid in the aftercast/pet_aftercast phase.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spell-target">Spell Target</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">spell.target.name</td>
+<td align="left">string</td>
+<td align="left">Name of the spell's target.</td>
+</tr>
+<tr>
+<td align="left">spell.target.raw</td>
+<td align="left">string</td>
+<td align="left">Unaltered name of the spell's target. (can be <t>, <bt>, etc.)</td>
+</tr>
+<tr>
+<td align="left">spell.target.type</td>
+<td align="left">string</td>
+<td align="left">'SELF', 'PLAYER', 'NPC', or 'MONSTER'. Should be re-keyed to match validtarget.</td>
+</tr>
+<tr>
+<td align="left">spell.target.hpp</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 100 indicating the current HP% of the spell's target.</td>
+</tr>
+<tr>
+<td align="left">spell.target.distance</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 50 indicating the current distance (in yalms) from the spell's target. Does account for vertical distance.</td>
+</tr>
+<tr>
+<td align="left">spell.target.isallymember</td>
+<td align="left">boolean</td>
+<td align="left">Boolean indicating whether or not the spell's target is an alliance member.</td>
+</tr>
+<tr>
+<td align="left">spell.target.is_npc</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your current spell target is an NPC or player.</td>
+</tr>
+<tr>
+<td align="left">spell.target.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the current spell target if it is available.</td>
+</tr>
+<tr>
+<td align="left">spell.target.mpp</td>
+<td align="left">number</td>
+<td align="left">MPP of the current spell target if it is available.</td>
+</tr>
+<tr>
+<td align="left">spell.target.model_size</td>
+<td align="left">number</td>
+<td align="left">Spell target's model size.</td>
+</tr>
+<tr>
+<td align="left">spell.target.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">spell.target.race</td>
+<td align="left">string</td>
+<td align="left">String indicating the spell target's race.</td>
+</tr>
+<tr>
+<td align="left">spell.target.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the spell target's race. IDs correspond to the values outlined in ../addons/libs/races.lua</td>
+</tr>
+<tr>
+<td align="left">spell.target.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the spell target's status.</td>
+</tr>
+<tr>
+<td align="left">spell.target.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">spell.target.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of your current spell target.</td>
+</tr>
+<tr>
+<td align="left">spell.target.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of your current spell target. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">spell.target.x</td>
+<td align="left">number</td>
+<td align="left">X position of your current spell target. (east/west)</td>
+</tr>
+<tr>
+<td align="left">spell.target.y</td>
+<td align="left">number</td>
+<td align="left">Y position of your current spell target. (up/down)</td>
+</tr>
+<tr>
+<td align="left">spell.target.z</td>
+<td align="left">number</td>
+<td align="left">Z position of your current spell target. (north/south)</td>
+</tr>
+<tr>
+<td align="left">spell.target.facing</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction your current spell target is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">spell.target.index</td>
+<td align="left">number</td>
+<td align="left">Index value of your current spell target.</td>
+</tr>
+<tr>
+<td align="left">spell.target.id</td>
+<td align="left">number</td>
+<td align="left">ID of your current spell target.</td>
+</tr>
+<tr>
+<td align="left">spell.target.claim_id</td>
+<td align="left">number</td>
+<td align="left">ID of the player with claim over the spell target (if relevant).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player">Player</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">player.name</td>
+<td align="left">string</td>
+<td align="left">User's name.</td>
+</tr>
+<tr>
+<td align="left">player.mob_name</td>
+<td align="left">string</td>
+<td align="left">User's name from the monster array. This will be different from player.name when you are a monipulator.</td>
+</tr>
+<tr>
+<td align="left">player.status</td>
+<td align="left">string</td>
+<td align="left">User's current status.</td>
+</tr>
+<tr>
+<td align="left">player.hp</td>
+<td align="left">number</td>
+<td align="left">User's current HP.</td>
+</tr>
+<tr>
+<td align="left">player.mp</td>
+<td align="left">number</td>
+<td align="left">User's current MP.</td>
+</tr>
+<tr>
+<td align="left">player.tp</td>
+<td align="left">number</td>
+<td align="left">User's current TP.</td>
+</tr>
+<tr>
+<td align="left">player.max_hp</td>
+<td align="left">number</td>
+<td align="left">User's current max HP.</td>
+</tr>
+<tr>
+<td align="left">player.max_mp</td>
+<td align="left">number</td>
+<td align="left">User's current max MP.</td>
+</tr>
+<tr>
+<td align="left">player.hpp</td>
+<td align="left">number</td>
+<td align="left">User's current HPP. Varies from 0 to 100.</td>
+</tr>
+<tr>
+<td align="left">player.mpp</td>
+<td align="left">number</td>
+<td align="left">User's current MPP. Varies from 0 to 100.</td>
+</tr>
+<tr>
+<td align="left">player.main_job_id</td>
+<td align="left">number</td>
+<td align="left">User's current main job ID. IDs correspond to jobs as outlined in ../addons/libs/jobs.lua</td>
+</tr>
+<tr>
+<td align="left">player.main_job</td>
+<td align="left">string</td>
+<td align="left">User's current shortened main job code. Uses "MON" as the code for monipulator. Value determines which Lua file is loaded.</td>
+</tr>
+<tr>
+<td align="left">player.main_job_full</td>
+<td align="left">string</td>
+<td align="left">User's current full main job name.</td>
+</tr>
+<tr>
+<td align="left">player.main_job_level</td>
+<td align="left">number</td>
+<td align="left">User's current main job level. Varies from 1 to 99.</td>
+</tr>
+<tr>
+<td align="left">player.sub_job_id</td>
+<td align="left">number</td>
+<td align="left">User's current sub job ID. IDs correspond to jobs as outlined in ../addons/libs/jobs.lua</td>
+</tr>
+<tr>
+<td align="left">player.sub_job</td>
+<td align="left">string</td>
+<td align="left">User's current shortened sub job code.</td>
+</tr>
+<tr>
+<td align="left">player.sub_job_full</td>
+<td align="left">string</td>
+<td align="left">User's current full sub job name.</td>
+</tr>
+<tr>
+<td align="left">player.sub_job_level</td>
+<td align="left">number</td>
+<td align="left">User's current sub job level. Varies from 1 to 49.</td>
+</tr>
+<tr>
+<td align="left">player.isallymember</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether you are in an alliance.</td>
+</tr>
+<tr>
+<td align="left">player.in_combat</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether or not battle music is playing.</td>
+</tr>
+<tr>
+<td align="left">player.skills.<skill name></td>
+<td align="left">number</td>
+<td align="left">User's current skill level. <skill name> can be replaced with any of the skills found in ../addons/libs/skills.lua</td>
+</tr>
+<tr>
+<td align="left">player.jobs.<shortened job code></td>
+<td align="left">number</td>
+<td align="left">User's current maximum job levels. <shortened job code> can be replaced with any of the codes found in ../addons/libs/jobs.lua</td>
+</tr>
+<tr>
+<td align="left">player.linkshell</td>
+<td align="left">string</td>
+<td align="left">Name of the user's current linkshell.</td>
+</tr>
+<tr>
+<td align="left">player.linkshell_rank</td>
+<td align="left">number</td>
+<td align="left">User's current linkshell rank. Unsure how this maps onto Shellholder, Sackholder, Member, Broken, (and potentially unopened).</td>
+</tr>
+<tr>
+<td align="left">player.linkshell_slot</td>
+<td align="left">number</td>
+<td align="left">Inventory slot of the user's currently equipped linkshell.</td>
+</tr>
+<tr>
+<td align="left">player.nation</td>
+<td align="left">number</td>
+<td align="left">Nation of player's current allegiance. Unsure how this maps onto San d'Oria, Bastok, and Windurst.</td>
+</tr>
+<tr>
+<td align="left">player.id</td>
+<td align="left">number</td>
+<td align="left">User's ID. This does not change within an FFXI session, but can change when you log out and back in.</td>
+</tr>
+<tr>
+<td align="left">player.index</td>
+<td align="left">number</td>
+<td align="left">User's index. This can change when you zone.</td>
+</tr>
+<tr>
+<td align="left">player.target_index</td>
+<td align="left">number</td>
+<td align="left">Index value of the user's target.</td>
+</tr>
+<tr>
+<td align="left">player.model_size</td>
+<td align="left">number</td>
+<td align="left">User's model size.</td>
+</tr>
+<tr>
+<td align="left">player.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">player.race</td>
+<td align="left">string</td>
+<td align="left">String indicating the user's race.</td>
+</tr>
+<tr>
+<td align="left">player.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's race. IDs correspond to the values outlined in ../addons/libs/races.lua</td>
+</tr>
+<tr>
+<td align="left">player.species</td>
+<td align="left">table</td>
+<td align="left">Resources line for the player's current species. Only valid for monipulators.</td>
+</tr>
+<tr>
+<td align="left">player.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">player.speed</td>
+<td align="left">number</td>
+<td align="left">User's current speed.</td>
+</tr>
+<tr>
+<td align="left">player.speed_base</td>
+<td align="left">number</td>
+<td align="left">User's base speed. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">player.x</td>
+<td align="left">number</td>
+<td align="left">User's X position. (east/west)</td>
+</tr>
+<tr>
+<td align="left">player.y</td>
+<td align="left">number</td>
+<td align="left">User's Y position. (up/down)</td>
+</tr>
+<tr>
+<td align="left">player.z</td>
+<td align="left">number</td>
+<td align="left">User's Z position. (north/south)</td>
+</tr>
+<tr>
+<td align="left">player.facing</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction your current target is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">player.inventory</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.sack</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.satchel</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.case</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.wardrobe</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.wardrobe2</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.wardrobe3</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.wardrobe4</td>
+<td align="left">table</td>
+<td align="left">Table keyed with the name of equipment pieces.  Keys for both short name and long name exist, if applicable.  Value is a table containing containing item id, count, short name (shortname), and optionally long name (longname).</td>
+</tr>
+<tr>
+<td align="left">player.indi</td>
+<td align="left">table</td>
+<td align="left">Table with values "element" (string name), "element_id" (resources ID number), "target" (Ally or Enemy), and "size" (1-4). May not be accurate if GearSwap is reloaded while an Indi spell is active.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player-equipment">Player Equipment</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">player.equipment.main</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the main slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.sub</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the sub slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.range</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the range slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.ammo</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the ammo slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.head</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the head slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.neck</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the neck slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.left_ear</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the left ear slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.right_ear</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the right ear slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.body</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the body slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.hands</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the hands slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.left_ring</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the left ring slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.right_ring</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the right ring slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.back</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the back slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.waist</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the waist slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.legs</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the legs slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+<tr>
+<td align="left">player.equipment.feet</td>
+<td align="left">string</td>
+<td align="left">Item currently equipped in the feet slot. Uses the exact name found in the "english" or child node field of the resources at the moment.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player-target">Player Target</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">player.target.name</td>
+<td align="left">string</td>
+<td align="left">The name of the monster currently targetted by the user.</td>
+</tr>
+<tr>
+<td align="left">player.target.type</td>
+<td align="left">string</td>
+<td align="left">'Self', 'PLAYER', 'NPC', or 'MONSTER'. Should be re-keyed to match validtarget.</td>
+</tr>
+<tr>
+<td align="left">player.target.hpp</td>
+<td align="left">number</td>
+<td align="left">Target's current HPP. Varies from 0 to 100.</td>
+</tr>
+<tr>
+<td align="left">player.target.distance</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 50 indicating the current distance (in yalms) from the target. Does account for vertical distance.</td>
+</tr>
+<tr>
+<td align="left">player.target.isallymember</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your current target is in your alliance.</td>
+</tr>
+<tr>
+<td align="left">player.target.is_npc</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your current target is an NPC or player.</td>
+</tr>
+<tr>
+<td align="left">player.target.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the current target if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.target.mpp</td>
+<td align="left">number</td>
+<td align="left">MPP of the current target if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.target.model_size</td>
+<td align="left">number</td>
+<td align="left">Target's model size.</td>
+</tr>
+<tr>
+<td align="left">player.target.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">player.target.race</td>
+<td align="left">string</td>
+<td align="left">String indicating the target's race.</td>
+</tr>
+<tr>
+<td align="left">player.target.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the target's race. IDs correspond to the values outlined in ../addons/libs/races.lua</td>
+</tr>
+<tr>
+<td align="left">player.target.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the target's status.</td>
+</tr>
+<tr>
+<td align="left">player.target.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">player.target.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of your current target.</td>
+</tr>
+<tr>
+<td align="left">player.target.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of your current target. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">player.target.x</td>
+<td align="left">number</td>
+<td align="left">X position of your current target. (east/west)</td>
+</tr>
+<tr>
+<td align="left">player.target.y</td>
+<td align="left">number</td>
+<td align="left">Y position of your current target. (up/down)</td>
+</tr>
+<tr>
+<td align="left">player.target.z</td>
+<td align="left">number</td>
+<td align="left">Z position of your current target. (north/south)</td>
+</tr>
+<tr>
+<td align="left">player.target.heading</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction your current target is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">player.target.index</td>
+<td align="left">number</td>
+<td align="left">Index value of your current target.</td>
+</tr>
+<tr>
+<td align="left">player.target.id</td>
+<td align="left">number</td>
+<td align="left">ID of your current target.</td>
+</tr>
+<tr>
+<td align="left">player.target.claim_id</td>
+<td align="left">number</td>
+<td align="left">ID of the player with claim over the target (if relevant).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player-last-subtarget">Player Last Subtarget</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">player.last_subtarget.name</td>
+<td align="left">string</td>
+<td align="left">Name of the last subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.type</td>
+<td align="left">string</td>
+<td align="left">'Self', 'PLAYER', 'NPC', or 'MONSTER'. Should be re-keyed to match validtarget.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.hpp</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 100 indicating the last HP% of the spell's target.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.distance</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 50 indicating the last distance (in yalms) from the subtarget. Does account for vertical distance.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.isallymember</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your last subtarget is in your alliance.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.is_npc</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your last subtarget is an NPC or player.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the last subtarget if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.mpp</td>
+<td align="left">number</td>
+<td align="left">MPP of the last subtarget if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.model_size</td>
+<td align="left">number</td>
+<td align="left">Last subtarget's model size.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.race</td>
+<td align="left">string</td>
+<td align="left">String indicating the last subtarget's race.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the last subtarget's race. IDs correspond to the values outlined in ../addons/libs/races.lua</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the last subtarget's status.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of your last subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of your last subtarget. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.x</td>
+<td align="left">number</td>
+<td align="left">X position of your last subtarget. (east/west)</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.y</td>
+<td align="left">number</td>
+<td align="left">Y position of your last subtarget. (up/down)</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.z</td>
+<td align="left">number</td>
+<td align="left">Z position of your last subtarget. (north/south)</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.heading</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction your last subtarget is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.index</td>
+<td align="left">number</td>
+<td align="left">Index value of your last subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.id</td>
+<td align="left">number</td>
+<td align="left">ID of your last subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.last_subtarget.claim_id</td>
+<td align="left">number</td>
+<td align="left">ID of the player with claim over the subtarget (if relevant).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player-subtarget">Player Subtarget</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">player.subtarget.name</td>
+<td align="left">string</td>
+<td align="left">Name of the current subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.type</td>
+<td align="left">string</td>
+<td align="left">'Self', 'PLAYER', 'NPC', or 'MONSTER'. Should be re-keyed to match validtarget.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.hpp</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 100 indicating the current HP% of the spell's target.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.distance</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 50 indicating the current distance (in yalms) from the subtarget. Does account for vertical distance.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.isallymember</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your current subtarget is in your alliance.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.is_npc</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether your current subtarget is an NPC or player.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the current subtarget if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.mpp</td>
+<td align="left">number</td>
+<td align="left">MPP of the current subtarget if it is available.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.model_size</td>
+<td align="left">number</td>
+<td align="left">Current subtarget's model size.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.race</td>
+<td align="left">string</td>
+<td align="left">String indicating the current subtarget's race.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the current subtarget's race. IDs correspond to the values outlined in ../addons/libs/races.lua</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the current subtarget's status.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of your current subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of your current subtarget. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.x</td>
+<td align="left">number</td>
+<td align="left">X position of your current subtarget. (east/west)</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.y</td>
+<td align="left">number</td>
+<td align="left">Y position of your current subtarget. (up/down)</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.z</td>
+<td align="left">number</td>
+<td align="left">Z position of your current subtarget. (north/south)</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.heading</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction your current subtarget is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.index</td>
+<td align="left">number</td>
+<td align="left">Index value of your current subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.id</td>
+<td align="left">number</td>
+<td align="left">ID of your current subtarget.</td>
+</tr>
+<tr>
+<td align="left">player.subtarget.claim_id</td>
+<td align="left">number</td>
+<td align="left">ID of the player with claim over the subtarget (if relevant).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player-buff-details">Player Buff Details</h3>
+<h3 id="pet">Pet</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">pet.name</td>
+<td align="left">string</td>
+<td align="left">Name of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">pet.isvalid</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether or not the pet exists.</td>
+</tr>
+<tr>
+<td align="left">pet.element</td>
+<td align="left">string</td>
+<td align="left">Fire, Water, Thunder, etc. for Avatars.</td>
+</tr>
+<tr>
+<td align="left">pet.hpp</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 100 indicating the current HP% of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">pet.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">N/A</td>
+<td align="left"></td>
+<td align="left">I'm not sure what the distinction was here, but I also don't see why we should include two versions of pet TP.</td>
+</tr>
+<tr>
+<td align="left">pet.model_size</td>
+<td align="left">number</td>
+<td align="left">User's pet's model size.</td>
+</tr>
+<tr>
+<td align="left">pet.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">pet.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the the user's pet's race. Pets should always have a race_id of 0.</td>
+</tr>
+<tr>
+<td align="left">pet.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the pet's status.</td>
+</tr>
+<tr>
+<td align="left">pet.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's status.</td>
+</tr>
+<tr>
+<td align="left">pet.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">pet.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of the user's pet. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">pet.x</td>
+<td align="left">number</td>
+<td align="left">X position of the user's pet. (east/west)</td>
+</tr>
+<tr>
+<td align="left">pet.y</td>
+<td align="left">number</td>
+<td align="left">Y position of the user's pet. (up/down)</td>
+</tr>
+<tr>
+<td align="left">pet.z</td>
+<td align="left">number</td>
+<td align="left">Z position of the user's pet. (north/south)</td>
+</tr>
+<tr>
+<td align="left">pet.heading</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction the user's pet is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">pet.index</td>
+<td align="left">number</td>
+<td align="left">Index value of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">pet.id</td>
+<td align="left">number</td>
+<td align="left">ID of the user's pet.</td>
+</tr>
+<tr>
+<td align="left">PUP special values:</td>
+<td align="left"></td>
+<td align="left">These values are not valid in get_sets()</td>
+</tr>
+<tr>
+<td align="left">pet.hp</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.mp</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.mpp</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.melee</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.max_melee</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.ranged</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.max_ranged</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.magic</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.max_magic</td>
+<td align="left">number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">pet.str</td>
+<td align="left">number</td>
+<td align="left">Base automaton STR.</td>
+</tr>
+<tr>
+<td align="left">pet.str_add</td>
+<td align="left">number</td>
+<td align="left">STR added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.dex</td>
+<td align="left">number</td>
+<td align="left">Base automaton DEX.</td>
+</tr>
+<tr>
+<td align="left">pet.dex_add</td>
+<td align="left">number</td>
+<td align="left">DEX added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.vit</td>
+<td align="left">number</td>
+<td align="left">Base automaton VIT.</td>
+</tr>
+<tr>
+<td align="left">pet.vit_add</td>
+<td align="left">number</td>
+<td align="left">VIT added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.agi</td>
+<td align="left">number</td>
+<td align="left">Base automaton AGI.</td>
+</tr>
+<tr>
+<td align="left">pet.agi_add</td>
+<td align="left">number</td>
+<td align="left">AGI added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.int</td>
+<td align="left">number</td>
+<td align="left">Base automaton INT.</td>
+</tr>
+<tr>
+<td align="left">pet.int_add</td>
+<td align="left">number</td>
+<td align="left">INT added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.mnd</td>
+<td align="left">number</td>
+<td align="left">Base automaton MND.</td>
+</tr>
+<tr>
+<td align="left">pet.mnd_add</td>
+<td align="left">number</td>
+<td align="left">MND added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.chr</td>
+<td align="left">number</td>
+<td align="left">Base automaton CHR.</td>
+</tr>
+<tr>
+<td align="left">pet.chr_add</td>
+<td align="left">number</td>
+<td align="left">CHR added to automaton's base.</td>
+</tr>
+<tr>
+<td align="left">pet.head</td>
+<td align="left">string</td>
+<td align="left">Currently equipped head.</td>
+</tr>
+<tr>
+<td align="left">pet.frame</td>
+<td align="left">string</td>
+<td align="left">Currently equipped frame.</td>
+</tr>
+<tr>
+<td align="left">pet.attachments</td>
+<td align="left">table</td>
+<td align="left">Table keyed to the currently equipped attachments. Pet.attachments.strobe would be true if you have stobe equipped.</td>
+</tr>
+<tr>
+<td align="left">pet.available_attachments</td>
+<td align="left">table</td>
+<td align="left">Table keyed to the currently available attachments (owned). Pet.available_attachments.strobe would be true if own strobe.</td>
+</tr>
+<tr>
+<td align="left">pet.available_heads</td>
+<td align="left">table</td>
+<td align="left">Table keyed to the currently available heads (owned).</td>
+</tr>
+<tr>
+<td align="left">pet.available_frames</td>
+<td align="left">table</td>
+<td align="left">Table keyed to the currently available frames (owned).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adventuring-fellow">Adventuring Fellow</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">fellow.name</td>
+<td align="left">string</td>
+<td align="left">Name of the user's adventuring fellow.</td>
+</tr>
+<tr>
+<td align="left">fellow.isvalid</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that indicates whether or not the fellow exists.</td>
+</tr>
+<tr>
+<td align="left">fellow.hpp</td>
+<td align="left">number</td>
+<td align="left">Number from 0 to 100 indicating the current HP% of the user's adventuring fellow.</td>
+</tr>
+<tr>
+<td align="left">fellow.mpp</td>
+<td align="left">number</td>
+<td align="left">MPP of the user's adventuring fellow if it is available.</td>
+</tr>
+<tr>
+<td align="left">fellow.tp</td>
+<td align="left">number</td>
+<td align="left">TP of the user's adventuring fellow.</td>
+</tr>
+<tr>
+<td align="left">fellow.model_size</td>
+<td align="left">number</td>
+<td align="left">User's adventuring fellow's model size.</td>
+</tr>
+<tr>
+<td align="left">fellow.mob_type</td>
+<td align="left">number</td>
+<td align="left">No one seems to know what this value means.</td>
+</tr>
+<tr>
+<td align="left">fellow.race</td>
+<td align="left">string</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fellow.race_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the the user's adventuring fellow's race. Pets should always have a race_id of 0.</td>
+</tr>
+<tr>
+<td align="left">fellow.status</td>
+<td align="left">string</td>
+<td align="left">String indicating the fellow's status.</td>
+</tr>
+<tr>
+<td align="left">fellow.status_id</td>
+<td align="left">number</td>
+<td align="left">Number indicating the user's adventuring fellow's status. IDs correspond to the values outlined in ../addons/libs/status.lua</td>
+</tr>
+<tr>
+<td align="left">fellow.speed</td>
+<td align="left">number</td>
+<td align="left">Speed of the user's adventuring fellow.</td>
+</tr>
+<tr>
+<td align="left">fellow.speed_base</td>
+<td align="left">number</td>
+<td align="left">Base speed of the user's adventuring fellow. It is unclear whether this is maximum speed or the amount before enhancement.</td>
+</tr>
+<tr>
+<td align="left">fellow.x</td>
+<td align="left">number</td>
+<td align="left">X position of the user's adventuring fellow. (east/west)</td>
+</tr>
+<tr>
+<td align="left">fellow.y</td>
+<td align="left">number</td>
+<td align="left">Y position of the user's adventuring fellow. (up/down)</td>
+</tr>
+<tr>
+<td align="left">fellow.z</td>
+<td align="left">number</td>
+<td align="left">Z position of the user's adventuring fellow. (north/south)</td>
+</tr>
+<tr>
+<td align="left">fellow.heading</td>
+<td align="left">number</td>
+<td align="left">Value indicating the direction the user's adventuring fellow is facing. This is in radians and takes a value of +/- pi with 0 representing facing east.</td>
+</tr>
+<tr>
+<td align="left">fellow.index</td>
+<td align="left">number</td>
+<td align="left">Index value of the user's adventuring fellow.</td>
+</tr>
+<tr>
+<td align="left">fellow.id</td>
+<td align="left">number</td>
+<td align="left">ID of the user's adventuring fellow.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alliance-and-party">Alliance and Party</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">party.count</td>
+<td align="left">number</td>
+<td align="left">Number of people in your current party.</td>
+</tr>
+<tr>
+<td align="left">alliance.count</td>
+<td align="left">number</td>
+<td align="left">Number of people in your current alliance.</td>
+</tr>
+<tr>
+<td align="left">alliance[alliance_position][party_position]</td>
+<td align="left">table</td>
+<td align="left">Information on an alliance member. Alliance position is a number from 1-3 and indicates which party in the alliance you are referencing. Your party is 1.</td>
+</tr>
+<tr>
+<td align="left">party[party_position]</td>
+<td align="left">table</td>
+<td align="left">Mob Array of a party member. Party position is a number from 1-6 and indicates which member of the party you are referencing. You are 1.</td>
+</tr>
+<tr>
+<td align="left">alliance[alliance_position][party_position].mob</td>
+<td align="left">table</td>
+<td align="left">Contains all of the information above (position, distance, etc.) if the given party member has loaded since you zoned. Information may not be accurate if they are further than 50 yalms. This table is similar to the above information for targets.</td>
+</tr>
+<tr>
+<td align="left">party[party_position].mob</td>
+<td align="left">table</td>
+<td align="left">Contains all of the information above (position, distance, etc.) if the given party member has loaded since you zoned. Information may not be accurate if they are further than 50 yalms. This table is similar to the above information for targets.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="world">World</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">world.area</td>
+<td align="left">string</td>
+<td align="left">Name of the current zone - the same as world.zone</td>
+</tr>
+<tr>
+<td align="left">world.time</td>
+<td align="left">number</td>
+<td align="left">Current game time in hours.minutes format. Currently takes the floating point value, which is not precise.</td>
+</tr>
+<tr>
+<td align="left">world.day</td>
+<td align="left">string</td>
+<td align="left">Name of the current day.</td>
+</tr>
+<tr>
+<td align="left">world.day_element</td>
+<td align="left">string</td>
+<td align="left">Element of the current day.</td>
+</tr>
+<tr>
+<td align="left">world.weather_id</td>
+<td align="left">number</td>
+<td align="left">Game's weather ID code, per ../addons/libs/weather.lua SCH storm's will be reported over actual in-game weather if one is up.</td>
+</tr>
+<tr>
+<td align="left">world.weather</td>
+<td align="left">string</td>
+<td align="left">Current weather's name. SCH storm's will be reported over actual in-game weather if one is up.</td>
+</tr>
+<tr>
+<td align="left">world.weather_element</td>
+<td align="left">string</td>
+<td align="left">Current weather's element. SCH storm's will be reported over actual in-game weather if one is up.</td>
+</tr>
+<tr>
+<td align="left">world.weather_intensity</td>
+<td align="left">number</td>
+<td align="left">Current weather's intensity. SCH storm's will be reported over actual in-game weather if one is up.</td>
+</tr>
+<tr>
+<td align="left">world.real_weather_id</td>
+<td align="left">number</td>
+<td align="left">Same as above but reports only actual weather not SCH Storms.</td>
+</tr>
+<tr>
+<td align="left">world.real_weather</td>
+<td align="left">string</td>
+<td align="left">Same as above but reports only actual weather not SCH Storms.</td>
+</tr>
+<tr>
+<td align="left">world.real_weather_element</td>
+<td align="left">string</td>
+<td align="left">Same as above but reports only actual weather not SCH Storms.</td>
+</tr>
+<tr>
+<td align="left">world.real_weather_intensity</td>
+<td align="left">number</td>
+<td align="left">Same as above but reports only actual weather not SCH Storms.</td>
+</tr>
+<tr>
+<td align="left">world.moon</td>
+<td align="left">string</td>
+<td align="left">The current moon phase.</td>
+</tr>
+<tr>
+<td align="left">world.moon_pct</td>
+<td align="left">number</td>
+<td align="left">Current moon percentage. Ranges from 0 to 100 and changes on day change.</td>
+</tr>
+<tr>
+<td align="left">world.zone</td>
+<td align="left">string</td>
+<td align="left">Zone name - the same as world.area.</td>
+</tr>
+<tr>
+<td align="left">world.zone_id</td>
+<td align="left">number</td>
+<td align="left">ID of the zone. These can be seen in the URLs of ffxidb.</td>
+</tr>
+<tr>
+<td align="left">world.logged_in</td>
+<td align="left">boolean</td>
+<td align="left">Boolean that represents whether or not you are logged in. This should always be true for GearSwap events.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="active-buffs">Active Buffs</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">buffactive</td>
+<td align="left">table</td>
+<td align="left">Stores the number of a given buff that is active. Keys are the buff names (case insensitive), so buffactive['light arts'] would be nil or 1 depending whether or not you have light arts up.</td>
+</tr>
+</tbody>
+</table>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-05-03
+    
+  </small>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Windower Development Team
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/Windower" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/aUrHCvk" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+    
+  </body>
+</html>
