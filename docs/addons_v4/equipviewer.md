@@ -7,12 +7,26 @@ tags:
 
 ???+ abstract inline end "Attribution"
 
-    | | |
-    | :--- | :--- |
-    | **Author(s)** | Tako, Rubenator |
-    | **Version** | 3.3.1 |
-    | **Date** | 2021-04-13 |
-    | **Source** | [GitHub](https://github.com/Windower/Lua/tree/live/addons/equipviewer) |
+    <table>
+        <tbody>
+            <tr>
+                <td>**Author(s)**</td>
+                <td>Tako, Rubenator</td>
+            </tr>
+            <tr>
+                <td>**Version**</td>
+                <td>3.31</td>
+            </tr>
+            <tr>
+                <td>**Date**</td>
+                <td>2021-04-13</td>
+            </tr>
+            <tr>
+                <td>**Source**</td>
+                <td>[GitHub](https://github.com/Windower/Lua/tree/live/addons/equipviewer)</td>
+            </tr>
+        </tbody>
+    </table>
 
 Displays current equipment grid on screen. Also can show current Ammo count and current Encumbrance.
 
