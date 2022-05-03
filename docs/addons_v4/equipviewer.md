@@ -11,6 +11,7 @@ tags:
     | **Author(s)** | Tako, Rubenator |
     | **Version** | 3.3.1 |
     | **Date** | 2021-04-13 |
+    | **Source** | [GitHub](https://github.com/Windower/Lua/tree/live/addons/equipviewer) |
 
 Displays current equipment grid on screen. Also can show current Ammo count and current Encumbrance.
 
@@ -96,6 +97,3 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 
 #### game_path
 :   `game_path <path>`: sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forward slash `/` instead. (Legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere.)
-
-## Source
-The latest source and information for this addon can be found on [GitHub](https://github.com/Windower/Lua/tree/live/addons/equipviewer).
