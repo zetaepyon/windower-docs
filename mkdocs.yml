@@ -3,9 +3,11 @@ site_url: https://docs.windower.net
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Addons (v4):
+  - Addons (v4): addons_v4
       - addons_v4/battlemod.md
       - addons_v4/gearswap.md
+  - Plugins (v4):
+  - Addons (v5):
 theme:
   name: material
   palette:
@@ -20,7 +22,7 @@ theme:
     repo: fontawesome/brands/github
 repo_url: https://github.com/Windower/docs
 repo_name: Windower/docs
-copyright: Copyright &copy; 2022 Windower Development Team | All FFXI content and images &copy; 2002-2022 SQUARE ENIX CO., LTD. | FINAL FANTASY is a registered trademark of SQUARE ENIX CO., LTD.
+copyright: Copyright &copy; 2022 Windower Development Team
 extra:
   social:
     - icon: fontawesome/brands/github
