@@ -27,36 +27,16 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 | :--- | :--- | :--- |
 | `position` | `<xpos> <ypos>` | Moves the display to the specified position (from top left). |
 | `size` | `<pixels>` | set pixel size of each item slot (defaults to 32 -- same as the size of the item icons) |
-
-#### scale
-:   `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
-
-#### alpha
-:   `alpha <opacity>`: set opacity of icons (out of 255)
-
-#### transparency
-:   `transparency <transparency>`: inverse of alpha (out of 255) -- modifies same setting as alpha
-
-#### background
-:   `background <red> <green> <blue> <alpha>`: sets color and opacity of background (out of 255)
-
-#### ammocount
-:   `ammocount`: toggles showing current ammo count (defaults to on/true)
-
-#### encumbrance
-:   `encumbrance`: toggles showing encumbrance Xs (defaultis on/true)
-
-#### hideonzone
-:   `hideonzone`: toggles hiding while crossing zone lines (default is on/true)
-
-#### hideoncutscene
-:   `hideoncutscene`: toggles hiding when in cutscene/npc menu/etc (default is on/true)
-
-#### justify
-:   `justify`: toggles between ammo text being right or left justifed (default is right justified)
-
-#### help
-:   `help`: displays explanations of each command
+| `scale` | `<factor>` | scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size |
+| `alpha` | `<opacity>` | set opacity of icons (out of 255) |
+| `transparency` | `<transparency>` | inverse of alpha (out of 255) -- modifies same setting as alpha |
+| `background` | `<red> <green> <blue> <alpha>` | sets color and opacity of background (out of 255) |
+| `ammocount` || toggles showing current ammo count (defaults to on/true) |
+| `encumbrance` || toggles showing encumbrance Xs (defaultis on/true) |
+| `hideonzone` || toggles hiding while crossing zone lines (default is on/true) |
+| `hideoncutscene` || toggles hiding when in cutscene/npc menu/etc (default is on/true) |
+| `justify` || toggles between ammo text being right or left justifed (default is right justified) |
+`help` || displays explanations of each command 
 
 ### Example Commands
 
