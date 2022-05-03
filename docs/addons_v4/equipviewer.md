@@ -26,24 +26,40 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 #### position
 :   `position <xpos> <ypos>`
     Moves the display to the specified position (from top left).
-    
-2. `size <pixels>`: set pixel size of each item slot (defaults to 32 -- same as the size of the item icons)
-3. `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
-4. `alpha <opacity>`: set opacity of icons (out of 255)
-5. `transparency <transparency>`: inverse of alpha (out of 255) -- modifies same setting as alpha
-6. `background <red> <green> <blue> <alpha>`: sets color and opacity of background (out of 255)
-7. `ammocount`: toggles showing current ammo count (defaults to on/true)
-8. `encumbrance`: toggles showing encumbrance Xs (defaultis on/true)
-9. `hideonzone`: toggles hiding while crossing zone lines (default is on/true)
-10. `hideoncutscene`: toggles hiding when in cutscene/npc menu/etc (default is on/true)
-11. `justify`: toggles between ammo text being right or left justifed (default is right justified)
-12. `help`: displays explanations of each command
 
-#### Legacy Command
+#### size
+:    `size <pixels>`: set pixel size of each item slot (defaults to 32 -- same as the size of the item icons)
 
-`game_path <path>`
-:   sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forward slash `/` instead. (Legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere.)
-	
+#### scale
+:   `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
+
+#### alpha
+:   `alpha <opacity>`: set opacity of icons (out of 255)
+
+#### transparency
+:   `transparency <transparency>`: inverse of alpha (out of 255) -- modifies same setting as alpha
+
+#### background
+:   `background <red> <green> <blue> <alpha>`: sets color and opacity of background (out of 255)
+
+#### ammocount
+:   `ammocount`: toggles showing current ammo count (defaults to on/true)
+
+#### encumbrance
+:   `encumbrance`: toggles showing encumbrance Xs (defaultis on/true)
+
+#### hideonzone
+:   `hideonzone`: toggles hiding while crossing zone lines (default is on/true)
+
+#### hideoncutscene
+:   `hideoncutscene`: toggles hiding when in cutscene/npc menu/etc (default is on/true)
+
+#### justify
+:   `justify`: toggles between ammo text being right or left justifed (default is right justified)
+
+#### help
+:   `help`: displays explanations of each command
+
 ### Example Commands
 
 === "Windower Console"
@@ -96,6 +112,11 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
     /con ev justify
     /con ev help
     ```
+    
+## Legacy Commands
+
+#### game_path
+:   `game_path <path>`: sets path to FFXI folder where you want dats extracted from. Backslashes `\` must be escaped (like so: `\\`) or use forward slash `/` instead. (Legacy command as of `3.3.1` in which the game path is now pulled from the registry, but this command is still here in case you want to pull from dats that exist elsewhere.)
 
 ## Source
 The latest source and information for this addon can be found on [GitHub](https://github.com/Windower/Lua/tree/live/addons/equipviewer).
