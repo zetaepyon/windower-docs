@@ -115,6 +115,7 @@ copyright: Copyright &copy; 2022 Windower Development Team
 markdown_extensions:
   - meta
   - admonition
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
