@@ -11,6 +11,11 @@ tags:
     **Version:**  3.3.0<br>
     **Date:** April 13, 2021<br>
 
+    | :--- | :--- |
+    | **Author(s)** | Tako, Rubenator |
+    | **Version** | 3.3.1 |
+    | **Date** | 2021-04-13 |
+
 Displays current equipment grid on screen. Also can show current Ammo count and current Encumbrance.
 
 ## Settings
