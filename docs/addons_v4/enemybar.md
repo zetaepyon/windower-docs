@@ -1,6 +1,8 @@
 ---
 permalink: /addons/enemybar/
 title: Enemybar
+tags:
+  - User Interface
 ---
 
 Creates a big health bar for the target to make it easy to see.

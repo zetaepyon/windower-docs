@@ -1,6 +1,8 @@
 ---
 permalink: /addons/equipviewer/
 title: Equipviewer
+tags:
+  - User Interface
 ---
 
 **Author:**  Tako, Rubenator<br>

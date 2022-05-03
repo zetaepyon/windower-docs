@@ -1,6 +1,8 @@
 ---
 permalink: /addons/infobar/
 title: InfoBar
+tags:
+  - User Interface
 ---
 
 Displays a configurable bar showing information on your targets.

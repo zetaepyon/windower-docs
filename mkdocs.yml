@@ -112,6 +112,8 @@ theme:
 repo_url: https://github.com/Windower/docs
 repo_name: Windower/docs
 copyright: Copyright &copy; 2022 Windower Development Team
+plugins:
+  - tags
 extra:
   social:
     - icon: fontawesome/brands/github
