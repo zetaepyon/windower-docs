@@ -112,6 +112,11 @@ theme:
 repo_url: https://github.com/Windower/docs
 repo_name: Windower/docs
 copyright: Copyright &copy; 2022 Windower Development Team
+markdown_extensions:
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 plugins:
   - tags
 extra:

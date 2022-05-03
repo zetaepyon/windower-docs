@@ -5,9 +5,11 @@ tags:
   - User Interface
 ---
 
-**Author:**  Tako, Rubenator<br>
-**Version:**  3.3.0<br>
-**Date:** April 13, 2021<br>
+!!! info inline
+
+    **Author:**  Tako, Rubenator<br>
+    **Version:**  3.3.0<br>
+    **Date:** April 13, 2021<br>
 
 * Displays current equipment grid on screen. Also can show current Ammo count and current Encumbrance.
 
