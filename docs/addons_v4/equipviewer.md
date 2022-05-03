@@ -19,16 +19,14 @@ Most settings can be modified via commands, but you can edit the `settings.xml` 
 
 ## Commands
 
-!!! tip ""
+!!! tip "Addon Command"
 
     **Abbreviation:** `ev`
 
-#### position
-:   `position <xpos> <ypos>`
-    Moves the display to the specified position (from top left).
-
-#### size
-:    `size <pixels>`: set pixel size of each item slot (defaults to 32 -- same as the size of the item icons)
+| Command | Parameters | Description |
+| :--- | :--- | :--- |
+| `position` | `<xpos> <ypos>` | Moves the display to the specified position (from top left). |
+| `size` | `<pixels>` | set pixel size of each item slot (defaults to 32 -- same as the size of the item icons) |
 
 #### scale
 :   `scale <factor>`: scale multiplier for size of each item slot (1 is 32px) -- modifies same setting as size
